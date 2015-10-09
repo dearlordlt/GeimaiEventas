@@ -1,0 +1,22 @@
+{
+  "name": "GeimaiEventas",
+  "version": "1.0.0",
+  "description": "Fun",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dearlordlt/GeimaiEventas"
+  },
+  "keywords": [
+    "Fun"
+  ],
+  "author": "DearLord",
+  "license": "whoot ?",
+  "bugs": {
+    "url": "https://github.com/dearlordlt/GeimaiEventas/issues"
+  },
+  "homepage": "https://github.com/dearlordlt/GeimaiEventas"
+}
