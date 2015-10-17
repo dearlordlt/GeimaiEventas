@@ -1,4 +1,1 @@
-﻿petras;
-jonas;
-antanas;
-knyslius;
+?petras|0;jonas|0;antanas|0;knyslius|0;

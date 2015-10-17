@@ -1,9 +1,1 @@
-﻿kliupikas;
-snaigė;
-šūdai;
-antilopė;
-hantelis;
-kubilas;
-stuff;
-upokšnis;
-kaminas;
+?kliupikas;snaig?;�?dai;antilop?;hantelis;kubilas;stuff;upok�nis;kaminas;
