@@ -1,11 +1,11 @@
 'use strict';
 
-var app = angular.module("app", ['ui.router']);
+var app = angular.module('app', ['ui.router']);
 
 app.config(['$httpProvider', '$stateProvider', '$urlRouterProvider', function ($httpProvider, $stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
-    $urlRouterProvider.otherwise("/home");
+    $urlRouterProvider.otherwise('/home');
     //
     // Now set up the states
     $stateProvider
@@ -19,6 +19,4 @@ app.config(['$httpProvider', '$stateProvider', '$urlRouterProvider', function ($
             templateUrl: 'components/zodis/zodis.html',
             controller: 'ZodisController'
         });
-
-        $httpProvider.defaults.useXDomain = true;
 }]);
