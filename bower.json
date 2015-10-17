@@ -1,0 +1,22 @@
+{
+  "name": "GeimaiEventas",
+  "description": "Fun",
+  "main": "app/index.html",
+  "authors": [
+    "DearLord"
+  ],
+  "license": "whoot ?",
+  "keywords": [
+    "Fun"
+  ],
+  "homepage": "https://github.com/dearlordlt/GeimaiEventas",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
