@@ -1,19 +1,17 @@
 'use strict';
 
-var app = angular.module('app', ['ngRoute']);
+var geimas = angular.module('geimas', ['ngRoute', 'geimas.home', 'geimas.zodis']);
 
-app.config(['$routeProvider', '$locationProvider',
-    function($routeProvider, $locationProvider) {
-        $routeProvider
-            .when('/home', {
-                templateUrl: 'components/home/home.html',
-                controller: 'HomeController',
-            })
-            .when('components/home/home.html', {
-                templateUrl: 'chapter.html',
-                controller: 'ChapterCtrl',
-                controllerAs: 'chapter'
-            });
-
-        $locationProvider.html5Mode(true);
-    }]);
+geimas.config(['$routeProvider', '$locationProvider',
+    function ($routeProvider, $locationProvider) {
+        $routeProvider.otherwise({redirectTo: '/home'});
+        $routeProvider.when('/home', {
+            templateUrl: './components/home/home.html',
+            controller: 'HomeController'
+        });
+        $routeProvider.when('/zodis', {
+            templateUrl: 'components/zodis/zodis.html',
+            controller: 'ZodisController'
+        });
+        //$locationProvider.html5Mode(false);
+    }]).run(['$route', angular.noop]);
