@@ -1,1 +1,1 @@
-?petras|0;jonas|0;antanas|0;knyslius|0;
+petras|0|0;jonas|0|0;antanas|0|0;knyslius|0|0;

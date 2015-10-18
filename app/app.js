@@ -1,22 +1,19 @@
 'use strict';
 
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ngRoute']);
 
-app.config(['$httpProvider', '$stateProvider', '$urlRouterProvider', function ($httpProvider, $stateProvider, $urlRouterProvider) {
-    //
-    // For any unmatched url, redirect to /state1
-    $urlRouterProvider.otherwise('/home');
-    //
-    // Now set up the states
-    $stateProvider
-        .state('home', {
-            url: '/home',
-            templateUrl: 'components/home/home.html',
-            controller: 'HomeController'
-        })
-        .state('zodis', {
-            url: '/zodis',
-            templateUrl: 'components/zodis/zodis.html',
-            controller: 'ZodisController'
-        });
-}]);
+app.config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
+        $routeProvider
+            .when('/home', {
+                templateUrl: 'components/home/home.html',
+                controller: 'HomeController',
+            })
+            .when('components/home/home.html', {
+                templateUrl: 'chapter.html',
+                controller: 'ChapterCtrl',
+                controllerAs: 'chapter'
+            });
+
+        $locationProvider.html5Mode(true);
+    }]);
