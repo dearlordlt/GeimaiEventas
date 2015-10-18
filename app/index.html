@@ -14,10 +14,9 @@
 </head>
 <body>
 
-<a href="#/zodis">zodis</a>
-<a href="#/home">home</a>
+<nav-bar></nav-bar>
 
-<div ng-view>a</div>
+<div ng-view>Loading ...</div>
 
 <!-- Libs -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
@@ -27,8 +26,14 @@
 
 <!-- APP -->
 <script src="app.js"></script>
+
+<!-- View Controllers -->
 <script src="components/home/home-ctrl.js"></script>
 <script src="components/zodis/zodis-ctrl.js"></script>
+
+<!-- Directives -->
+<script src="components/user-list/user-list-drv.js"></script>
+<script src="components/nav-bar/nav-bar-drv.js"></script>
 
 </body>
 </html>

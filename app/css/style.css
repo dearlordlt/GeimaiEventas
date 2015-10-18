@@ -1,0 +1,21 @@
+.table-container {
+    display: table;
+}
+
+.table-container .table-row {
+    height: 100%;
+    display: table-row;
+}
+
+.table-container .table-row .table-col {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+}
+
+html,body
+{
+    height: 100%;
+}
+
+body { padding-top: 70px; }
