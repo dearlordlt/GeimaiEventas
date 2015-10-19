@@ -31,7 +31,7 @@ angular.module('geimas').directive('userList', function() {
             $scope.getUsersData();
 
             //Interval get data
-            //setInterval($scope.getUsersData, 2000);
+            setInterval($scope.getUsersData, 2000);
         }]
     };
 });
