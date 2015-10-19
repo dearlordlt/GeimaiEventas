@@ -23,6 +23,6 @@ runs on [http://localhost:8000/app/](http://localhost:3000/users/)
 
 ##SETUP
 
-*npm install (root folder)
-*bower install (root folder)
-*npm install (server folder)
+* npm install (root folder)
+* bower install (root folder)
+* npm install (server folder)
