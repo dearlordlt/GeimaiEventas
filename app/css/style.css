@@ -15,11 +15,61 @@
 
 html, body {
     height: 100%;
+    font-family: Audiowide;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 50px;
 }
+
+.container {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #101010;
+    color: white;
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ccc;
+}
+
+.bloomberg-class {
+    position: fixed;
+
+    min-height: 100%;
+    background-color: white;
+}
+
+.user-list-class {
+    position: fixed;
+    left: 75%;
+    min-height: 100%;
+    padding: 10px;
+    background-color: #eeeeee;
+
+}
+
+.user-list-class-numbers {
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+
+.label {
+    font-weight: normal;
+    color: black;
+}
+
+label {
+    font-weight: normal;
+}
+
+
 
 [animate-on-change] {
     transition: all 1s;
@@ -32,16 +82,19 @@ body {
     -webkit-transition: none;
 }
 
+
+
 /* NEWS */
 
 #news_strip {
-    width: 2500px;
-    border-bottom: 1px dotted #cccccc;
+    width: 3500px;
+    background-color: black;
     display: block;
-    height: 17px;
+    height: 32px;
+    font-size: 25px;
     position: relative;
     overflow: hidden;
-    margin-left: -700px;
+    margin-left: -1000px;
 }
 
 #news_strip a {
@@ -56,7 +109,7 @@ body {
 #news_strip a span {
     cursor: pointer;
     display: inline;
-    color: #343434;
+    color: white;
     font-weight: bold;
     padding-right: 5px;
     z-index: 1;
