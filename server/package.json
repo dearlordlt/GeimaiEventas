@@ -2,13 +2,14 @@
   "name": "server",
   "version": "1.0.0",
   "description": "stuf",
-  "main": "index.js",
+  "main": "services.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Me!",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "finalhandler": "^0.4.0",
     "lazy": "^1.0.11",

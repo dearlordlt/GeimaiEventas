@@ -13,9 +13,21 @@
     vertical-align: top;
 }
 
-html,body
-{
+html, body {
     height: 100%;
 }
 
-body { padding-top: 70px; }
+body {
+    padding-top: 70px;
+}
+
+[animate-on-change] {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+[animate-on-change].changed {
+    background-color: red;
+    transition: none;
+    -webkit-transition: none;
+}

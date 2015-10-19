@@ -1,0 +1,9 @@
+<div ng-if="!error" class="alert-danger">{{error}}</div>
+
+<div ng-if="users">
+    <div class="row" ng-repeat="user in users track by $index">
+        <div class="col-xs-6" animate-on-change="users[$index]"><label>{{user.name}}</label></div>
+        <div class="col-xs-3"><span class="label label-primary">{{user.points}}</span></div>
+        <div class="col-xs-3"><span class="label label-success">{{user.money}}$</span></div>
+    </div>
+</div>
