@@ -1,0 +1,6 @@
+Galaktika apsišiko dėl %randomPlayer% kvailumo;
+Marsiečiai nerimauja dėl %randomPlayer% poelgio!;
+%randomPlayer% netyčia išmetė kūdikį reklaminės kompanijos metu;
+%randomPlayer% pažadėjo panaikinti mokęsčius;
+Policijos tyrimas dėl nelegalios pornografijos %randomPlayer% kompiuteryje sustabdytas...;
+%randomPlayer% atsisako komentuoti nėščios Proksima VII gyventojos priekaištus;

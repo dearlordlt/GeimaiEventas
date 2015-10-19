@@ -28,6 +28,18 @@ function dataToWords(data) {
     return data.toString().split(';');
 }
 
+function dataToNews(data) {
+    //title
+    var arr = data.toString().replace(/(\r\n|\n|\r)/gm,"").split(';');
+    var arrNews = [];
+
+    for(var i = 0; i < arr.length-1; i++) {
+        arrNews.push({'title' : arr[i]});
+    }
+
+    return arrNews;
+}
+
 app.get('/users/', function (req, res) {
     fs.readFile('DB/zaidejai.txt', function (err, data) {
         if (err) throw err;
@@ -43,6 +55,15 @@ app.get('/words/', function (req, res) {
         res.charset = 'UTF-8';
         res.set('Content-Type', 'application/json');
         res.send(dataToWords(data));
+    });
+});
+
+app.get('/news/', function (req, res) {
+    fs.readFile('DB/eilute.txt', function (err, data) {
+        if (err) throw err;
+        res.charset = 'UTF-8';
+        res.set('Content-Type', 'application/json');
+        res.send(dataToNews(data));
     });
 });
 
