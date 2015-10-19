@@ -1,1 +1,1 @@
-petras|909|300;jonas|1072|25000;antanas|100|153;knysliuss|0|35;
+petras|909|300;juozas|1072|25000;antanas|100|153;knyslius|0|35;
