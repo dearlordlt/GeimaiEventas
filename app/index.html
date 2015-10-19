@@ -8,8 +8,10 @@
     <title>Such WoW</title>
 
     <!-- styles -->
+    <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- endbower -->
 
 </head>
 <body>
@@ -19,11 +21,13 @@
 <div ng-view>Loading ...</div>
 
 <!-- Libs -->
+<!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/angular-route/angular-route.min.js"></script>
 <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+<!-- endbower -->
 
 <!-- APP -->
 <script src="app.js"></script>
@@ -31,10 +35,11 @@
 <!-- View Controllers -->
 <script src="components/home/home-ctrl.js"></script>
 <script src="components/zodis/zodis-ctrl.js"></script>
+<script src="components/results/results-ctrl.js"></script>
 
 <!-- Directives -->
-<script src="components/user-list/user-list-drv.js"></script>
-<script src="components/nav-bar/nav-bar-drv.js"></script>
+<script src="components/common/user-list/user-list-drv.js"></script>
+<script src="components/common/nav-bar/nav-bar-drv.js"></script>
 
 <!-- Common -->
 <script src="components/common/directives/animateOnChange-drv.js"></script>

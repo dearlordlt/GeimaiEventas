@@ -19,6 +19,8 @@
     "url": "https://github.com/dearlordlt/GeimaiEventas/issues"
   },
   "homepage": "https://github.com/dearlordlt/GeimaiEventas",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "wiredep": "^3.0.0-beta"
   }
 }

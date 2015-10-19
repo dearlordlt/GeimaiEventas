@@ -1,6 +1,13 @@
 'use strict';
 
-var geimas = angular.module('geimas', ['ngRoute', 'ngAnimate', 'geimas.home', 'geimas.zodis']);
+var geimas = angular.module('geimas',
+    [
+        'ngRoute',
+        'ngAnimate',
+        'geimas.home',
+        'geimas.zodis',
+        'geimas.results'
+    ]);
 
 geimas.config(['$routeProvider', '$locationProvider', '$httpProvider',
     function ($routeProvider, $locationProvider, $httpProvider) {
@@ -15,6 +22,11 @@ geimas.config(['$routeProvider', '$locationProvider', '$httpProvider',
         $routeProvider.when('/zodis', {
             templateUrl: 'components/zodis/zodis.html',
             controller: 'ZodisController'
+        });
+
+        $routeProvider.when('/results', {
+            templateUrl: 'components/results/results.html',
+            controller: 'ResultsController'
         });
 
         //$locationProvider.html5Mode(false);

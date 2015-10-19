@@ -1,6 +1,6 @@
 angular.module('geimas').directive('userList', function() {
     return {
-        templateUrl: 'components/user-list/user-list.html',
+        templateUrl: 'components/common/user-list/user-list.html',
         controller : ['$scope', '$http', '$timeout', function($scope, $http) {
             $scope.users = null;
             $scope.error = null;
@@ -27,6 +27,10 @@ angular.module('geimas').directive('userList', function() {
                 });
             };
 
+            //Initial get data
+            $scope.getUsersData();
+
+            //Interval get data
             setInterval($scope.getUsersData, 2000);
         }]
     };
