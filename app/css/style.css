@@ -68,6 +68,48 @@ body {
     text-align: right;
 }
 
+.results-class {
+    background-color: black;
+    min-height: 1000px;
+}
+
+.zodis {
+    padding: 30px;
+}
+
+.table > tbody > tr > td {
+    border-top: 5px solid #000000;
+}
+
+.zodis-zodis {
+    border: 5px solid #000000;
+    font-size: 60px;
+    color: red;
+}
+
+.circle
+{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    font-size: 200px;
+    color: white;
+    line-height: 350px;
+    text-align: center;
+    background: black;
+}
+
+.zodis-laikas {
+    margin:0 auto;
+}
+.zodis-button {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+
 .label {
     font-weight: normal;
     color: black;
