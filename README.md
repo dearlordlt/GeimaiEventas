@@ -26,3 +26,6 @@ runs on [http://localhost:8000/app/](http://localhost:3000/users/)
 * npm install (root folder)
 * bower install (root folder)
 * npm install (server folder)
+
+##CSS
+* install Audiowide google font [https://www.google.com/fonts#UsePlace:use/Collection:Audiowide][https://www.google.com/fonts#UsePlace:use/Collection:Audiowide]
