@@ -1,9 +1,9 @@
 <div ng-if="!error" class="alert-danger">{{error}}</div>
 
 <div ng-if="users">
-    <div class="row" ng-repeat="user in users | orderBy: '-points' track by $index ">
-        <div class="col-xs-5" animate-on-change="users[$index]"><label>{{user.name}}</label></div>
-        <div class="user-list-class-numbers col-xs-3"><span class="label">{{user.points}}</span></div>
-        <div class="user-list-class-numbers col-xs-4"><span class="label">{{user.money}}$</span></div>
+    <div class="row" ng-repeat="user in users track by $index">
+        <div class="col-xs-5" animate-on-change="users[$index]"><label>{{$index+1}}: {{user.name}}</label></div>
+        <div class="user-list-class-numbers col-xs-3" animate-on-change="users[$index]"><span class="label">{{user.points}}</span></div>
+        <div class="user-list-class-numbers col-xs-4" animate-on-change="users[$index]"><span class="label">{{user.money}}$</span></div>
     </div>
 </div>

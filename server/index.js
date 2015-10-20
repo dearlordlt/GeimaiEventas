@@ -16,9 +16,9 @@ function dataToUsers(data) {
     for (var i = 0; i < users.length - 1; i++) {
         var user = users[i].split('|');
         obj.push({
-            name: user[0],
-            points: user[1],
-            money: user[2]
+            name: (user[0]).toString().replace(/(\r\n|\n|\r)/gm,""),
+            points: user[1].toString().replace(/(\r\n|\n|\r)/gm,""),
+            money: user[2].toString().replace(/(\r\n|\n|\r)/gm,"")
         });
     }
     return obj;

@@ -127,7 +127,7 @@ label {
 }
 
 [animate-on-change].changed {
-    background-color: red;
+    background-color: #ffa91e;
     transition: none;
     -webkit-transition: none;
 }
@@ -137,14 +137,14 @@ label {
 /* NEWS */
 
 #news_strip {
-    width: 3500px;
+    width: 5500px;
     background-color: black;
     display: block;
     height: 32px;
     font-size: 25px;
     position: relative;
     overflow: hidden;
-    margin-left: -1000px;
+    margin-left: -2000px;
 }
 
 #news_strip a {
