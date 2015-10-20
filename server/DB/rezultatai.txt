@@ -1,2 +1,2 @@
-%player% užsitarnavo Marso balsus;
-%player% džiūgauja dėl rezultatų Naujajame Plutone;
+%player|0% užsitarnavo Marso balsus;
+%player|3% džiūgauja dėl rezultatų Naujajame Plutone;
