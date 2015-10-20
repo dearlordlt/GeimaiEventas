@@ -39,16 +39,24 @@ body {
 }
 
 .bloomberg-class {
-    position: fixed;
+    width: 75%;
+    float: left;
+    min-height: 1000px;
+    background-color: #000000;
+}
 
-    min-height: 100%;
-    background-color: white;
+.bloomberg-class-chart-1 {
+    padding-top: 30px;
+}
+
+.bloomberg-class-chart-2 {
+    padding-top: 30px;
 }
 
 .user-list-class {
-    position: fixed;
-    left: 75%;
-    min-height: 100%;
+    width: 25%;
+    float: right;
+    min-height: 1000px;
     padding: 10px;
     background-color: #eeeeee;
 
