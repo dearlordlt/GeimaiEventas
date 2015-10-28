@@ -1,17 +1,63 @@
+<div class="news-stringas">
+	<news-string></news-string>
+</div>
 <div class="container">
-    <div class="row">
-        <div class="results-class col-lg-9 col-sm-9">
-            <div class="row">
-                <div class="bloomberg-class-chart-1 col-lg-6 col-sm-6">
-                    <img class="img-responsive" src="img/pictures/planets.jpg" alt="Random picture" >
-                </div>
-                <div class="bloomberg-class-chart-2 col-lg-6 col-sm-6">
-                    <img class="img-responsive" src="img/pictures/poisson-graph.jpg" alt="Random picture" >
-                </div>
-            </div>
-        </div>
-        <div class="user-list-class col-lg-3 col-sm-3">
-            <user-list></user-list>
-        </div>
-    </div>
+	<div class="row">
+		<div class="results-class">
+			<div class="row">
+				<div class="bloomberg-class-chart-1 col-lg-4 col-sm-4">
+					<img class="img-responsive" src="img/pictures/planets.jpg" alt="Random picture">
+					<div style="position: absolute; left:100px; top: 65px; color: white;" ng-show="turn == 0">{{systems[0]}}</div>
+					<div style="position: absolute; left:120px; top: 292px; color: white;" ng-show="turn == 1">{{systems[1]}}</div>
+					<div style="position: absolute; left:265px; top: 130px; color: white;" ng-show="turn == 2">{{systems[2]}}</div>
+					<div style="position: absolute; left:395px; top: 336px; color: white;" ng-show="turn == 3">{{systems[3]}}</div>
+					<div style="position: absolute; left:105px; top: 448px; color: white;" ng-show="turn == 4">{{systems[4]}}</div>
+					<div style="position: absolute; left:30px; top: 400px; color: white;" ng-show="turn == 5">{{systems[5]}}</div>
+					<div style="position: absolute; left:290px; top: 50px; color: white;" ng-show="turn == 6">{{systems[6]}}</div>
+					<div style="position: absolute; left:300px; top: 250px; color: white;" ng-show="turn == 7">{{systems[7]}}</div>
+					<div style="position: absolute; left:377px; top: 155px; color: white;" ng-show="turn == 8">{{systems[8]}}</div>
+					<div style="position: absolute; left:225px; top: 24px; color: white;" ng-show="turn == 9">{{systems[9]}}</div>
+					<div style="color: white; font-size: 30px;" ng-if="turn > 0">{{systems[turn]}} galaktikos rezultatai
+					</div>
+
+				</div>
+
+				<div class="bloomberg-class-chart-2 col-lg-4 col-sm-4">
+					<div class="results-buttons btn-group">
+						<button class="btn btn-success" ng-click="showRes(0)">1</button>
+						<button class="btn btn-success" ng-click="showRes(1)">2</button>
+						<button class="btn btn-success" ng-click="showRes(2)">3</button>
+						<button class="btn btn-success" ng-click="showRes(3)">4</button>
+						<button class="btn btn-success" ng-click="showRes(4)">5</button>
+						<button class="btn btn-success" ng-click="showRes(5)">6</button>
+						<button class="btn btn-success" ng-click="showRes(6)">7</button>
+						<button class="btn btn-success" ng-click="showRes(7)">8</button>
+						<button class="btn btn-success" ng-click="showRes(8)">9</button>
+						<button class="btn btn-success" ng-click="showRes(9)">10</button>
+					</div>
+					<div>
+						<ul class="results-ul list-group">
+							<li class="list-group-item results-list"
+							    style="background: linear-gradient(to left, black {{100-getPercentThisTurn(p.points)*p.rnd[turn]}}%, blue {{100-getPercentThisTurn(p.points)*p.rnd[turn]}}%);"
+							    ng-repeat="p in usersArray">
+								{{p.president}} : {{getRoundedPercent(getPercentThisTurn(p.points), p.rnd[turn])}} %
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="bloomberg-class-chart-1 col-lg-4 col-sm-4">
+					<img class="img-responsive" src="{{tweet1}}" alt="Random picture">
+
+					<div>&nbsp;</div>
+					<img class="img-responsive" src="{{tweet2}}" alt="Random picture">
+
+					<div>&nbsp;</div>
+					<img class="img-responsive" src="{{tweet3}}" alt="Random picture">
+
+					<div>&nbsp;</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

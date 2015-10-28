@@ -41,24 +41,31 @@ body {
 .bloomberg-class {
     width: 75%;
     float: left;
-    min-height: 1000px;
+    min-height: 770px;
     background-color: #000000;
 }
 
 .bloomberg-class-chart-1 {
-    padding-top: 30px;
+
 }
 
 .bloomberg-class-chart-2 {
-    padding-top: 30px;
+
+}
+
+.news-stringas {
+    background-color: black;
+    padding-bottom: 30px;
+    max-width: 1600px;
 }
 
 .user-list-class {
     width: 25%;
     float: right;
-    min-height: 1000px;
+    min-height: 770px;
     padding: 10px;
     background-color: #eeeeee;
+
 
 }
 
@@ -70,21 +77,25 @@ body {
 
 .results-class {
     background-color: black;
-    min-height: 1000px;
+    min-height: 770px;
 }
 
 .zodis {
     padding: 30px;
 }
 
-.table > tbody > tr > td {
-    border-top: 5px solid #000000;
-}
+
 
 .zodis-zodis {
+    min-width: 100%;
     border: 5px solid #000000;
     font-size: 60px;
     color: red;
+    text-align: center;
+    line-height: 60px;
+    height: 95px;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .circle
@@ -103,12 +114,24 @@ body {
     margin:0 auto;
 }
 .zodis-button {
-    width: 100px;
-    height: 100px;
     text-align: center;
-    line-height: 100px;
+    font-size: 40px;
 }
 
+.button-line {
+
+    display: block;
+    vertical-align: middle;
+}
+
+.button-line-buttons {
+    margin-top: 15px;
+}
+
+.full-time {
+    font-size: 70px;
+    color: red;
+}
 
 .label {
     font-weight: normal;
@@ -119,6 +142,29 @@ label {
     font-weight: normal;
 }
 
+.beganti-eilute {
+    font-family: Audiowide;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    height: 30px;
+}
+
+.resuts-buttons {
+
+}
+
+.results-ul {
+    padding-top: 20px;
+}
+
+.results-list {
+    color: white;
+    background-color: blue;
+    border: none;
+}
 
 
 [animate-on-change] {

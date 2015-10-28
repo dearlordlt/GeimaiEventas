@@ -18,7 +18,8 @@ function dataToUsers(data) {
         obj.push({
             name: (user[0]).toString().replace(/(\r\n|\n|\r)/gm,""),
             points: user[1].toString().replace(/(\r\n|\n|\r)/gm,""),
-            money: user[2].toString().replace(/(\r\n|\n|\r)/gm,"")
+            money: user[2].toString().replace(/(\r\n|\n|\r)/gm,""),
+            role: user[4].toString().replace(/(\r\n|\n|\r)/gm,"")
         });
     }
     return obj;
@@ -71,5 +72,5 @@ var server = app.listen(3000, function () {
     var host = server.address().address;
     var port = server.address().port;
 
-    console.log('Example app listening at http://%s:%s', host, port);
+    console.log('Services: http://localhost:3000');
 });

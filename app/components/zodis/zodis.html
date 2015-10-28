@@ -1,19 +1,24 @@
 <div class="container">
     <div class="row">
         <div class="zodis col-lg-9 col-sm-9">
-            <table class="zodis-table table">
-                <tr>
-                    <td class="zodis-zodis">{{message}}</td>
-                </tr>
-            </table>
+
+            <div class="zodis-zodis" animate-on-change="zodis">{{zodis}}</div>
+
             <div class="zodis-laikas">
-                <div class="zodis-laikas circle"><span>15</span></div>
+                <div class="zodis-laikas circle"><span>{{gameWordLength}}</span></div>
             </div>
-            <div class="zodis-laikas">
-                <button type="button" class="zodis-laikas zodis-button btn btn-danger">Danger</button>
+            <div class="row button-line">
+                <div class="button-line-buttons btn-group col-lg-5 col-sm-5">
+                    <button type="button" ng-click="startGame()" class="zodis-button btn btn-success">Start</button>
+                    <button type="button" ng-click="addPoint()" class="zodis-button btn btn-primary">+</button>
+                    <button type="button" ng-click="removePoint()" class="zodis-button btn btn-danger">-</button>
+                    <button type="button" ng-click="newWord(1)" class="zodis-button btn btn-primary">New</button>
+                </div>
+                <div class="full-time col-lg-3 col-sm-3">{{minLeft}}:{{secLeft < 10 ? '0' + secLeft: secLeft}}</div>
+                <div class="full-time col-lg-4 col-sm-4" style="color: #337ab7;">Pt: {{score}}</div>
             </div>
         </div>
-        <div class="user-list-class col-lg-3 col-sm-3">
+        <div class="user-list-class col-lg-3 col-sm-3" style="min-height: 833px">
             <user-list></user-list>
         </div>
     </div>

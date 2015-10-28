@@ -5,14 +5,23 @@ angular.module('geimas').directive('userList', function ($rootScope) {
             $scope.users = null;
             $scope.error = null;
 
+            $scope.pointsTotall = 0;
+
+            $scope.getPercent = function(points) {
+                var percent = Math.round(points / $scope.pointsTotall * 1000) / 10;
+                return percent == Infinity ? 0.0 : percent;
+            };
+
             $scope.getUsersData = function () {
                 $http({
                     method: 'GET',
-                    url: 'http://localhost:3000/users/?' + Math.random(),
+                    url: 'http://192.168.43.85:3000/users/?' + Math.random(),
                     headers: {'Content-Type': 'application/json'}
                 }).then(function successCallback(response) {
                     $scope.error = null;
+                    $scope.pointsTotall = 0;
                     angular.forEach($scope.users, function (value, key) {
+                        $scope.pointsTotall += parseInt($scope.users[key].points);
                         if ($scope.users[key].name != response.data[key].name ||
                             $scope.users[key].points != response.data[key].points ||
                             $scope.users[key].money != response.data[key].money
